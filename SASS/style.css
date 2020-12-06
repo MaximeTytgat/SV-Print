@@ -70,6 +70,7 @@ header .slogan_with_image {
 }
 header .slogan_with_image .image {
   width: 150px;
+  padding: 20px 0;
 }
 header .slogan_with_image .image img {
   width: 100%;
@@ -178,6 +179,95 @@ header .slogan_with_image .slogan p {
 .bottom .text {
   border-bottom: #FFD18C solid 3px;
   border-right: #FFD18C solid 3px;
+}
+
+footer {
+  background-color: #0099FF;
+}
+footer .liste {
+  width: 65%;
+  margin: 0 auto;
+  padding: 15px;
+}
+footer .liste .category_title {
+  position: relative;
+  margin: 10px 0 15px 0;
+}
+footer .liste .category_title p {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: white;
+}
+@media screen and (min-width: 1601px) and (max-width: 2000px) {
+  footer .liste .category_title p {
+    font-size: 24px;
+  }
+}
+footer .liste .category_title:after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  width: 80px;
+  border-bottom: solid white 2px;
+}
+@media screen and (min-width: 1601px) and (max-width: 2000px) {
+  footer .liste .category_title:after {
+    top: 30px;
+    width: 100px;
+    border-bottom: solid white 3px;
+  }
+}
+footer .liste ul li {
+  padding: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+footer .liste ul li img {
+  margin-right: 10px;
+}
+footer .liste ul li a {
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+  text-decoration: none;
+  color: white;
+}
+@media screen and (min-width: 1601px) and (max-width: 2000px) {
+  footer .liste ul li a {
+    font-size: 20px;
+  }
+}
+footer .liste .networks {
+  padding: 25px 0 0 0;
+  display: flex;
+}
+footer .liste .networks li {
+  display: inline;
+  width: 50px;
+}
+@media screen and (min-width: 768px) and (max-width: 1600px) {
+  footer .liste {
+    width: 285px;
+  }
+}
+@media screen and (min-width: 1601px) and (max-width: 2600px) {
+  footer .liste {
+    width: 285px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1600px) {
+  footer > ul {
+    display: flex;
+    flex-flow: column wrap;
+    height: 380px;
+  }
+}
+@media screen and (min-width: 1601px) and (max-width: 2600px) {
+  footer > ul {
+    display: flex;
+    flex-flow: column wrap;
+    height: 380px;
+  }
 }
 
 @font-face {
