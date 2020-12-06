@@ -78,6 +78,51 @@ header {
     }
 
   }
+
+  .slogan_with_image {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+
+    .image {
+      width: 150px;
+      img {
+        width: 100%;
+      }
+      @media screen and (min-width: 400px) and (max-width: 600px) {
+        width: 200px;
+      }
+      @media screen and (min-width: 600px) and (max-width: 768px) {
+        width: 250px;
+      }
+    }
+
+    .slogan {
+
+      p {
+        color: #FFF;
+        text-transform: uppercase;
+        font: {
+          family: "Bison", sans-serif;
+          size: 35px;
+        }
+        letter-spacing: 5px;
+        width: 285px;
+        margin-bottom: 100px;
+
+        @media screen and (min-width: 400px) and (max-width: 600px) {
+          font-size: 40px;
+          width: 315px;
+        }
+        @media screen and (min-width: 600px) and (max-width: 768px) {
+          font-size: 50px;
+          width: 370px;
+        }
+      }
+    }
+
+  }
+
 }
 .display_none {
   display: none;
