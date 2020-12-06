@@ -1,3 +1,72 @@
+header {
+  background-image: url("../../../sv_print/img/background_header.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header .undraggle {
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+header nav .logo {
+  width: 130px;
+  margin: 20px;
+}
+@media screen and (min-width: 768px) {
+  header nav .logo {
+    width: 15%;
+  }
+}
+header nav .burger {
+  width: 80px;
+  margin: 20px;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  header nav .burger {
+    display: none;
+  }
+}
+header nav .links {
+  display: none;
+  justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  header nav .links {
+    display: flex;
+  }
+}
+header nav li a {
+  text-decoration: none;
+  color: #FFF;
+  padding: 20px;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+header nav .sub_mobile {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 100px;
+  background-color: #0990eb;
+  z-index: 1000;
+}
+header nav .sub_mobile li {
+  margin: 60px 0;
+}
+.display_none {
+  display: none;
+}
+
 .about,
 .tips {
   margin: 50px 0;
