@@ -1,0 +1,107 @@
+@import "layouts/header";
+@import "layouts/footer";
+
+
+
+@font-face {
+  font-family: "Bison";
+  src: url("../font/Bison-Bold.ttf") format("opentype");
+}
+
+$roboto: "Roboto", sans-serif;
+$bison: "bison", sans-serif;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header .slogan_with_image .slogan p {
+ width: 800px;
+}
+
+
+section {
+  h2,
+  h3 {
+    font-size: 40px;
+    font-family: "Bison", sans-serif;
+    letter-spacing: 5px;
+  }
+
+  p,
+  li {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    padding: 20px 0;
+  }
+
+  label {
+    font-size: 28px;
+    font-family: "Roboto", sans-serif;
+    padding: 20px 0;
+  }
+
+  .info_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 150px 0;
+    .yes {
+      width: 550px;
+    }
+  }
+
+  .input_group {
+    display: flex;
+    flex-flow: column;
+
+    input {
+      border: 1px solid black;
+      width: 700px;
+      height: 100px;
+      border-radius: 15px;
+    }
+    textarea {
+      border: 1px solid black;
+      width: 700px;
+      height: 600px;
+      border-radius: 15px;
+    }
+  }
+
+  .form_container {
+    margin-top: 100px;
+    display: flex;
+    .img {
+      width: 50%;
+      img {
+        width: 100%;
+      }
+    }
+    form {
+      margin: 0 auto;
+    }
+  }
+
+  button {
+    margin-top: 30px;
+    float: right;
+    font-size: 28px;
+    background-color: #958E8E;
+    padding: 10px 50px;
+    color: #FFFFFF;
+    border-radius: 15px;
+    border: none;
+  }
+}
+.undraggle {
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}

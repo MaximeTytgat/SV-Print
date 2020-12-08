@@ -14,6 +14,15 @@ header {
     -ms-user-select: none;
   }
 
+  .row {
+    position: absolute;
+    top: 465px;
+    left: 0;
+    width: 146px;
+    height: 10px;
+    background-color: white;
+  }
+
   nav {
     display: flex;
     justify-content: space-between;
@@ -34,7 +43,7 @@ header {
       margin: 20px;
       cursor: pointer;
 
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 769px) {
         display: none;
       }
     }
@@ -43,7 +52,7 @@ header {
       display: none;
       justify-content: space-between;
 
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 769px) {
         display: flex;
       }
     }
@@ -57,6 +66,22 @@ header {
         padding: 20px;
         text-transform: uppercase;
         font-family: "Roboto", sans-serif;
+
+        @media screen and (min-width: 769px) and (max-width: 992px){
+          padding-inline: 10px 20px;
+        }
+
+        @media screen and (min-width: 993px) and (max-width: 1200px){
+          font-size: 20px;
+        }
+
+        @media screen and (min-width: 1201px) and (max-width: 1600px){
+          font-size: 24px;
+        }
+
+        @media screen and (min-width: 1601px) and (max-width: 2500px){
+          font-size: 30px;
+        }
       }
     }
 
@@ -84,6 +109,8 @@ header {
     align-items: center;
     flex-flow: column;
 
+    padding-bottom: 90px;
+
     .image {
       width: 150px;
       padding: 20px 0;
@@ -95,6 +122,26 @@ header {
       }
       @media screen and (min-width: 600px) and (max-width: 768px) {
         width: 250px;
+      }
+      @media screen and (min-width: 769px) and (max-width: 992px){
+        order: 2;
+        width: 300px;
+      }
+      @media screen and (min-width: 993px) and (max-width: 1200px){
+        order: 2;
+        width: 300px;
+      }
+      @media screen and (min-width: 1201px) and (max-width: 1600px){
+        order: 2;
+        width: 350px;
+      }
+      @media screen and (min-width: 1601px) and (max-width: 2000px){
+        order: 2;
+        width: 450px;
+      }
+      @media screen and (min-width: 2001px) and (max-width: 2500px){
+        order: 2;
+        width: 550px;
       }
     }
 
@@ -109,7 +156,6 @@ header {
         }
         letter-spacing: 5px;
         width: 285px;
-        margin-bottom: 100px;
 
         @media screen and (min-width: 400px) and (max-width: 600px) {
           font-size: 40px;
@@ -119,9 +165,47 @@ header {
           font-size: 50px;
           width: 370px;
         }
+        @media screen and (min-width: 769px) and (max-width: 992px){
+          font-size: 60px;
+          width: 430px;
+        }
+        @media screen and (min-width: 993px) and (max-width: 1200px){
+          font-size: 60px;
+          width: 430px;
+        }
+        @media screen and (min-width: 1201px) and (max-width: 1600px){
+          font-size: 70px;
+          width: 500px;
+        }
+        @media screen and (min-width: 1601px) and (max-width: 2000px){
+          font-size: 90px;
+          width: 650px;
+        }
+        @media screen and (min-width: 2001px) and (max-width: 2600px){
+          font-size: 100px;
+          width: 670px;
+        }
+      }
+
+      @media screen and (min-width: 769px) and (max-width: 1600px){
+
       }
     }
 
+    @media screen and (min-width: 769px) and (max-width: 2000px){
+      padding: 70px 0 220px 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
+    @media screen and (min-width: 2001px) and (max-width: 2500px){
+      padding: 70px 0 220px 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
   }
 
 }

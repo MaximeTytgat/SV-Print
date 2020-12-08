@@ -1,0 +1,22 @@
+@import "layouts/header";
+@import "bibliotheque/images_with_desc";
+@import "layouts/footer";
+
+
+
+@font-face {
+  font-family: "Bison";
+  src: url("../font/Bison-Bold.ttf") format("opentype");
+}
+
+$roboto: "Roboto", sans-serif;
+$bison: "bison", sans-serif;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
